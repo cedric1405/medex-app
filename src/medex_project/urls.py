@@ -21,5 +21,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('medex_app.urls')),
+    path('', include('medex_app.urls')),  # ← Inclure les routes de l'app
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
